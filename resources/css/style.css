@@ -1,0 +1,18 @@
+.homePage{
+    -fx-background-image:url("../images/homeBackground.jpg") no-repeat left left fixed;
+    -fx-background-size: cover;
+}
+.scorePane{
+    -fx-background-color: black;
+    -fx-background-radius: 20;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+}
+.gameResult{
+    -fx-background-color: orange;
+    -fx-background-radius: 20;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+}

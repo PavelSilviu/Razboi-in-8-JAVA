@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="homePage" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayMenuScreenController">
+   <center>
+      <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="82.0" prefWidth="600.0" vgap="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="250.0" onMouseClicked="#switchToPvP" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pvp.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="250.0" onMouseClicked="#switchToPvC" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pvc.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="81.0" onMouseClicked="#switchToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/PREVIOUS_ICON.gif" />
+               </image>
+               <FlowPane.margin>
+                  <Insets bottom="60.0" right="40.0" />
+               </FlowPane.margin>
+            </ImageView>
+         </children>
+      </FlowPane>
+   </bottom>
+   <top>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

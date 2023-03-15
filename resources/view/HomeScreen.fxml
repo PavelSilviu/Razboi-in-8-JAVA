@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane minHeight="800.0" minWidth="800.0" styleClass="homePage" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeScreenController">
+   <center>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="800.0" vgap="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="250.0" onMouseClicked="#switchToPlayMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/play.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="250.0" onMouseClicked="#switchToHelp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/HELP.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="250.0" onMouseClicked="#switchToSettings" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/SETTING_BUTTON.png" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+   </center>
+   <top>
+      <ImageView fitHeight="358.0" fitWidth="547.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/titluu.gif" />
+         </image>
+         <BorderPane.margin>
+            <Insets top="40.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+   <bottom>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="800.0" styleClass="homePage" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PvpScreenController">
+   <center>
+      <Pane fx:id="gameBoard" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <FlowPane alignment="CENTER" maxHeight="150.0" orientation="VERTICAL" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="120.0" prefWidth="400.0" styleClass="scorePane">
+               <children>
+                  <Text fx:id="scorePlayer1" fill="CORAL" layoutX="38.0" layoutY="49.0" stroke="CORAL" strokeWidth="2.2" text="Text" textAlignment="CENTER">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="scorePlayer2" fill="MAGENTA" layoutX="38.0" layoutY="105.0" stroke="MAGENTA" strokeWidth="2.0" text="Text" textAlignment="CENTER">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+               </children>
+               <FlowPane.margin>
+                  <Insets left="20.0" />
+               </FlowPane.margin>
+            </Pane>
+            <Pane layoutX="30.0" layoutY="50.0" prefHeight="120.0" prefWidth="300.0" styleClass="scorePane">
+               <children>
+                  <Text fill="WHITE" layoutX="52.0" layoutY="46.0" stroke="WHITE" strokeWidth="2.2" text="Player Turn" textAlignment="CENTER">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerTurn" fill="WHITE" layoutX="131.0" layoutY="97.0" stroke="WHITE" strokeWidth="4.0" text="nr" textAlignment="CENTER">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+               </children>
+               <FlowPane.margin>
+                  <Insets left="20.0" />
+               </FlowPane.margin>
+            </Pane>
+         </children>
+      </FlowPane>
+   </top>
+   <bottom>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="100.0" prefWidth="300.0" styleClass="scorePane" stylesheets="@../css/style.css">
+               <children>
+                  <Text fx:id="minutesTimer" fill="WHITE" layoutX="35.0" layoutY="50.0" stroke="WHITE" strokeWidth="2.2" text="x min" textAlignment="CENTER">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="secondsTimer" fill="WHITE" layoutX="150.0" layoutY="50.0" stroke="WHITE" strokeWidth="2.2" text="&amp; y s" textAlignment="CENTER">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="60.0" layoutY="60.0" maxHeight="100.0" prefWidth="250.0" styleClass="gameResult" stylesheets="@../css/style.css">
+               <children>
+                  <Text fx:id="gameResult" fill="WHITE" layoutX="22.0" layoutY="45.0" stroke="WHITE" strokeWidth="2.2" text="GAME RESULT:" textAlignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+               <FlowPane.margin>
+                  <Insets left="20.0" />
+               </FlowPane.margin>
+            </Pane>
+            <Pane maxWidth="100.0">
+               <FlowPane.margin>
+                  <Insets left="20.0" />
+               </FlowPane.margin>
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="81.0" layoutX="24.0" layoutY="3.0" onMouseClicked="#switchToPlayMenuController" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/PREVIOUS_ICON.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>
